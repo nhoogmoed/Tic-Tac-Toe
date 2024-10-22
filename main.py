@@ -10,7 +10,7 @@ def getMoveFromAI(agentPiece: Piece, board: Board) -> Move:
 
   otherPiece = Piece.X if agentPiece == Piece.O else Piece.O
 
-  # step three: Take first available piece, in order of middle > corner > side
+  # step three: Take first available piece
 
   for x, y in ((0, 0), (0, 1), (0, 2), 
                (1, 0), (1, 1), (1, 2), 
